@@ -15,7 +15,22 @@ app.use(express.static("public"));
 // });
  
 app.get('/', function (req, res) {
- // NEW CODE
+ res.render('home');
+})
+
+app.get('/login', function (req, res) {
+ res.render('login');
+})
+
+app.get('/register', function (req, res) {
+ res.render('register');
+})
+
+app.get('/dashboard', function (req, res) {
+ res.render('dashboard');
+})
+
+app.get('/room', function (req, res) {
  res.render('room');
 })
 
